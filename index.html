@@ -25,8 +25,6 @@
                    colors: {
                         primary: '#212121',
                         secondary: 'rgb(73, 73, 73)',
-                        primary_bg: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
-                        secondary_bg: 'rgb(30, 30, 30)',
                         btn_bg:'rgb(171, 239, 95)',
                     },
                     fontFamily: {
@@ -98,9 +96,9 @@
     
     <!-- banner -->
      <section class="container mx-auto mt-10">
-  <div class="flex flex-col mx-auto items-center gap-6 w-[85%]">
+  <div class="flex flex-col mx-auto items-center gap-6 w-[95%] lg:w-full">
         <!-- background container -->
-        <div class="w-full h-40 lg:h-[350px]" style="background-image: url('./images/banner.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="w-full h-72 lg:h-[375px]" style="background-image: url('./images/banner.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
         </div>
    
@@ -119,7 +117,47 @@
 
     </header>
 
-    <main></main>
+    <main>
+      <!--  design thoughtful section -->
+        <section class="bg-[#F4F4F4]">
+          <div class="hero bg-secondary_bg min-h-screen mx-auto">
+            <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-9">
+              <img 
+                src="./images/rectangle.png"
+                class="w-full rounded-lg shadow-2xl" />
+              <div>
+                <button class="btn bg-[#FFFFFF] rounded-3xl text-base mb-5"><i class="fa-solid fa-arrow-right"></i> About</button>
+                <h1 class="text-5xl font-bold mb-4">We design thoughtful, <br> liveable spaces</h1>
+                <p class="text-base font-medium text-[#494949] mb-4">
+                  The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+
+             <div class="space-y-5">
+              <div class="flex gap-4 shadow-lg rounded-xl bg-[#FFFFFF] p-6">
+                <img src="./images/commercial.png" alt="">
+                <div>
+                  
+                  <h3 class="text-[#494949] text-xl font-extrabold">Commercial</h3>
+                  <p class="text-base text-[#737373] font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+               </div>
+               <div class="flex gap-4 shadow-lg rounded-xl bg-[#FFFFFF] p-6">
+                <img src="./images/residential.png" alt="">
+                <div>
+                  
+                  <h3 class="text-[#494949] text-xl font-extrabold">Reside</h3>
+                  <p class="text-base text-[#737373] font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+               </div>
+             </div>
+               
+              </div>
+            </div>
+          </div>
+
+        </section>
+    </main>
 
     <footer></footer>
 
